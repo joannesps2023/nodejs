@@ -39,6 +39,6 @@ jobs:
         id: fa
         with:
           app-name: 'jonodejsfuncapp'
-          slot-name: 'production'
+          slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_54ab7be356934890a99d8750428102af }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8992A4B9E60B4FC5AA7B28F029BCAE2D }}
