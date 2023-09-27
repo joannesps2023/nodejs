@@ -32,7 +32,7 @@ type Query {
       })
       idString = idString.slice(0,-1);
       idString = idString + ")";
-
+      console.log("idString = ",idString);
     let query = "SELECT * FROM c WHERE c.id in "+idString;
     let { resources: items } = await client.database(databaseName).container(containerName)
       .items.query({ query: query }).fetchAll();
